@@ -1,0 +1,39 @@
+# Credentials and local environment (never commit)
+.env
+.env.*
+*.env
+*.env.*
+.envrc
+**/secrets/
+**/credentials/
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+id_rsa*
+id_ed25519*
+.npmrc
+.netrc
+.git-credentials
+credentials.json
+secrets.json
+
+# Local tooling and generated archives
+.openai/
+.sites-runtime/
+.codex/
+.agents/
+node_modules/
+coverage/
+*.log
+*.zip
+*.bak
+*.tmp
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# dist/ contains the actual website sources and must be committed.
