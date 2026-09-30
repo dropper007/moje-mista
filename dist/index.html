@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Petrův osobní rozcestník. Oblíbené weby přehledně na jednom místě.">
+  <title>Moje místa · Petrův rozcestník</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%231e48dc'/%3E%3Cpath d='M10 10h8v8h-8zm12 0h8v8h-8zM10 22h8v8h-8zm12 0h8v8h-8z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="links.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#content">Přejít na odkazy</a>
+  <header class="topbar"><a class="brand" href="index.html"><span class="brand-icon" aria-hidden="true">▦</span> moje místa<span class="personal">/ Petr</span></a><span class="edition">OSOBNÍ ROZCESTNÍK</span></header>
+  <main>
+    <div class="heading"><div><p class="eyebrow">VŠECHNO PO RUCE</p><h1>Kam to dnes bude?</h1></div><span class="version">První návrh</span></div>
+    <form role="search" id="search-form"><label class="sr-only" for="search">Hledat v odkazech</label><div class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Najít web, kategorii nebo adresu…" autocomplete="off"><kbd aria-hidden="true">/</kbd></div></form>
+    <div class="workspace"><aside><p class="nav-label">MOJE KATEGORIE</p><nav id="categories" aria-label="Kategorie odkazů"></nav></aside>
+    <div id="content" tabindex="-1"><div class="results-bar"><h2 id="view-title">Všechny odkazy</h2><span id="result-count" role="status" aria-live="polite"></span></div><div id="groups"></div><div id="empty" hidden><h3>Nic jsme nenašli</h3><p>Zkus jiný název nebo zobraz všechny kategorie.</p><button id="reset" type="button">Zrušit hledání a filtry</button></div></div></div>
+    <footer><span>Moje místa <span aria-hidden="true">·</span> Méně hledání. Více času.</span><span id="total"></span></footer>
+  </main>
+  <noscript>Pro zobrazení a hledání odkazů zapni JavaScript.</noscript>
+</body>
+</html>
